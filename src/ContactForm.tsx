@@ -20,7 +20,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="py-8 px-4 lg:py-16 md:p-16  mx-auto max-w-screen-md border rounded-3xl bg-white">
+    <div className="py-8 px-8 p-16 mx-auto max-w-screen-md border rounded-3xl bg-white">
       {submitted ? (
         <span className="text-heliotrope-400 py-5">Thank you!</span>
       ) : (
