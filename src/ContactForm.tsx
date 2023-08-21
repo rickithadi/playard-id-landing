@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { useFormspark } from "@formspark/use-formspark";
 
-const FORMSPARK_FORM_ID = "o9Kd6J3S";
+const FORMSPARK_FORM_ID = "v69Swj83";
 
 export const ContactForm = () => {
   const [submit, submitting] = useFormspark({
@@ -10,66 +10,62 @@ export const ContactForm = () => {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const onSubmit = async (e: any) => {
     e.preventDefault();
     setSubmitted(true);
-    await submit({ message });
+    await submit({ email, message });
   };
 
   return (
-    <div className="min-h-[10vh]">
+    <div className="py-8 px-8 p-16 mx-auto max-w-screen-md border rounded-3xl bg-white">
       {submitted ? (
         <span className="text-heliotrope-400 py-5">Thank you!</span>
       ) : (
-        <form onSubmit={onSubmit} className=" h-full">
-          <div className="relative ">
-            <input
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              type="email"
-              id="email"
-              className="w-full block rounded-lg px-[.925rem] pb-2.5 pt-5 text-sm text-gray-900 bg-white border-2 border-[#DBDBDB] appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            />
+        <form className="space-y-12" onSubmit={onSubmit}>
+          <div>
             <label
               htmlFor="email"
-              className="p-2.5 absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+              className="block mb-2 text-sm font-medium text-gray-900"
             >
               Email
             </label>
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              id="email"
+              className="shadow-sm bg-gray-50 border text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+              placeholder="name@playard.id"
+              required
+            />
           </div>
 
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="message"
+              className="block mb-2 text-sm font-medium text-gray-900"
+            >
+              Pesan
+            </label>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              id="message"
+              rows={6}
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500"
+              placeholder="Tinggalkan pesan.."
+            />
+          </div>
           <button
             type="submit"
-            disabled={submitting || !message}
-            className="btn-primary btn btn-base md:float-right my-5"
+            disabled={submitting || !message || !email}
+            className="py-1 px-5 text-sm font-medium text-center text-white rounded-3xl bg-[#9378FF] sm:w-fit hover:bg-[#7f68d9] focus:ring-4 focus:outline-none focus:ring-primary-300"
           >
-            <p className="px-10 py-2 md:px-12">Daftar </p>
+            Kirim
           </button>
-          <style jsx>
-            {`
-              .btn {
-                @apply inline-block  text-center rounded-full font-sans;
-              }
-
-              .btn-base {
-                @apply text-[16px]  font-semibold;
-              }
-
-              .btn-xl {
-                @apply font-extrabold text-xl py-4 px-6;
-              }
-
-              .btn-primary {
-                @apply text-white bg-heliotrope-400;
-              }
-
-              .btn-primary:hover {
-                @apply bg-heliotrope-500;
-              }
-            `}
-          </style>
         </form>
       )}
     </div>

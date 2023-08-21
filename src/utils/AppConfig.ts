@@ -3,4 +3,5 @@ export const AppConfig = {
   title: "Playard Indonesia",
   description: "Platform Terbaik Untuk Mencari Lobi Olahraga",
   locale: "en",
+  footer_title: "PT Playard Maju Olahraga",
 };
