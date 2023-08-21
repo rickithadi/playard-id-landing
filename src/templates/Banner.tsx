@@ -4,8 +4,8 @@ import { Section } from "../layout/Section";
 const Banner = () => (
   <Section top>
     <CTABanner
-      title="Get In Touch"
-      subtitle="Tingkatkan gaya hidup aktifmu bersama kami!"
+      title="Tingkatkan Gaya Hidup Aktifmu Bersama Kami!"
+      subtitle="Punya permintaan, keluhan, atau apapun yang ingin disampaikan? Kontak kami melalui form di bawah. "
     />
   </Section>
 );
