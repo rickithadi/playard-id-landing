@@ -28,12 +28,9 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
           <Link href="https://app.playard.id" target="_blank">
             <Button> Daftar Sekarang</Button>
           </Link>
-          <Link
-            href="https://apps.apple.com/sg/app/playard/id64688486155"
-            className="p-4"
-          >
+          <Link href="https://apps.apple.com/sg/app/playard/id64688486155">
             <img
-              className="apple"
+              className="apple ml-4"
               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9"
               alt="Download on the App Store"
             />
