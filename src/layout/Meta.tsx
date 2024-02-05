@@ -56,6 +56,22 @@ const Meta = (props: IMetaProps) => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600&family=Lato&family=Nunito+Sans:ital,wght@0,400;1,300;1,400&display=swap"
           rel="stylesheet"
         ></link>
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/drxewzlaa/image/upload/v1691116991/playard_social_final_qwnnnh.png"
+        />
+        <meta property="twitter:title" content="Playard Indonesia" />
+        <meta
+          property="twitter:description"
+          content="Platform Terbaik Mencari Lobi Main Basket"
+        />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/drxewzlaa/image/upload/v1691116991/playard_social_final_qwnnnh.png"
+        />
+
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <NextSeo
         title={props.title}
