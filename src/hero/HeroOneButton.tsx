@@ -24,7 +24,12 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
         <div className="pt-3 md:pt-4 font-lato text-base  mb-8 leading-normal md:text-left	md:text-[24px]	">
           {props.description}
         </div>
-        <div className="text-center md:text-left flex">
+        {/* <div className='flex-row flex flex-wrap mx-auto'> */}
+        <div
+          className="sm:text-center text-left flex flex-wrap flex-row mx-auto
+place-content-center
+          "
+        >
           <Link href="https://app.playard.id" target="_blank">
             <Button> Daftar Sekarang</Button>
           </Link>
@@ -33,9 +38,19 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
           "
           >
             <img
-              className="apple ml-4"
+              className="mx-2"
               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9"
               alt="Download on the App Store"
+              height={280}
+              width={100}
+            />
+          </Link>
+          <Link href="https://play.google.com/store/apps/details?id=com.rickithadi.playardindo">
+            <img
+              height={400}
+              width={120}
+              src="/assets/images/google-play-badge.png"
+              alt="Download on the Play Store"
             />
           </Link>
         </div>
