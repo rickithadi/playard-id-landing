@@ -16,6 +16,7 @@ const Meta = (props: IMetaProps) => {
   return (
     <>
       <Head>
+        <meta name="apple-itunes-app" content="app-id=6468848615" />
         <meta charSet="UTF-8" key="charset" />
         <meta
           name="viewport"
