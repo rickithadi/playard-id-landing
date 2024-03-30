@@ -1,0 +1,27 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "B4BQMF4U57.com.rickithadi.playardindo"
+        ],
+        "components": [
+          {
+            "/": "*",
+            "comment": "Matches all routes"
+          }
+        ]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": [
+      "B4BQMF4U57.com.rickithadi.playardindo"
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "B4BQMF4U57.com.rickithadi.playardindo"
+    ]
+  }
+}
