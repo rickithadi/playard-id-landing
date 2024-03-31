@@ -7,7 +7,11 @@
         ],
         "components": [
           {
-            "/": "*",
+            "/": "/share/*",
+            "comment": "Share endpoint"
+          },
+          {
+            "/": "/*",
             "comment": "Matches all routes"
           }
         ]
