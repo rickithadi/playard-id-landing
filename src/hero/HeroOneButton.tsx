@@ -2,8 +2,6 @@ import { ReactNode } from "react";
 
 import Link from "next/link";
 
-import { Button } from "../button/Button";
-
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
@@ -30,9 +28,6 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
             place-content-center
           "
         >
-          <Link href="https://app.playard.id" target="_blank">
-            <Button> Daftar Sekarang</Button>
-          </Link>
           <Link
             href="https://apps.apple.com/sg/app/playard/id6468848615
           "
