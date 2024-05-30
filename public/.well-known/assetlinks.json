@@ -1,0 +1,17 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rickithadi.playardindo",
+      "sha256_cert_fingerprints": [
+        "ec:14:f2:a8:60:9b:b2:69:b8:bc:7d:ce:96:dc:41:61:cd:e2:60:86",
+        "5e:8f:16:06:2e:a3:cd:2c:4a:0d:54:78:76:ba:a6:f3:8c:ab:f6:25",
+        "01:47:29:a0:f5:7f:1f:2e:ea:f8:01:5f:2e:dd:c2:dd:ff:64:8a:14",
+        "3e:b6:df:62:86:27:fb:51:54:db:d6:58:c7:15:f9:4b:c0:29:f9:a1",
+        "FE:B4:B3:1A:40:9B:66:18:17:57:11:7C:EA:0C:7B:56:F9:10:FE:1D:7C:30:4D:34:0C:E8:D8:CE:65:14:21:9B",
+        "B2:7B:C7:89:D1:49:B0:15:84:A0:BB:4A:5D:0A:F1:31:EA:71:15:A9:99:00:62:05:4C:78:12:48:D2:EA:A0:FB"
+      ]
+    }
+  }
+]
